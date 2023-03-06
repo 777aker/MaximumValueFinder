@@ -1,0 +1,38 @@
+Homework 10: GPU programming
+
+Kelley Kelley
+CSCI 4239/5239 Spring 2022
+
+Run and then it will prompt you for values
+I did it in visual studio so I'm 99% sure it's going to break on linux
+And I can't fix it tomorrow, and I don't have linux so cool ig
+ 
+I took a class where we spent like 2 months using different
+algorithms to find the highest value of a function and I thought
+it'd be funny and fun to just brute force it especially since
+a lot of them like gradient descent have very specific parameters
+to the function (convex, continuous, so on) but brute force would 
+work no matter the function I think (at least get close ish hopefully we'll see)
+
+IDK, sometimes it just doesn't work and I have no clue what's going on apparently
+
+Difference:
+Values: 0, 100, .1: gradient descent takes 1 second and found a lower value then both brute force functions, The brute force functions found the same answers, but cpu 0.00057s and GPU 0.09885s so CPU is faster for small things
+Values: -2000, 5000, .01, gradient descent returned it's usual meh value. weirdly tho, the CPU took 0.16s to find x=-1606 to be the highest, and the GPU took .11s to find x = -4748 as the highest value and actually those two x's return the exact same value in the function 3000 x's apart.
+Values: 300, 10000, .001: gradient descent is hopeless. CPU 3.36s x=-4748 and GPU .25s x = 7817, but again those values in the function return the same exact thing
+Values: 0, 20000, 0.0001: grab some popcorn. eeeyyy gradient descent did it (almost only a .05 difference from CPU and GPU this time. GPU and CPU found same values as last values. CPU took 6s now tho and GPU still .3s
+Values: 0, 30000, 1: CPU GPU same as usual, x=29809, value is 61, gradient descent a solid 59. CPU .01s GPU .11s which is weird. I guess small step sizes are important for a difference
+Values: 0, 30000, .001: CPU GPU same values as earlier, but not CPU 8s GPU .3s still
+Basically, GPU is a lot faster but due to my limited capabilities of figuring out how to divy up the problem more, the problem can't get any bigger. I'm sure if I did it better then you could do like 0, 1000000, 0.0001 and that would be a big difference
+
+Time spent: 13 hours
+I spent 1 hr making gradient descent's worst nightmare that's still continuous and almost quasiconvex but not really so that gradient descent will hopefully fail.
+Spent 2 hr refactoring to Visual Studio and getting cuda working.
+4 hr doing non GPU programming part
+6 hr GPU being very confused about reduction
+
+Notes:
+- from class looks like 100,000 operation loops isn't a big difference
+- 1,000,000 see about 1 second difference
+- 4 million variable difference from about 3 - 16 seconds
+- 16 million can get 30 seconds or more difference

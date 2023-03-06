@@ -1,0 +1,18 @@
+﻿  Compiling CUDA source file hw10.cu...
+  
+  C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include"  -G   --keep-dir x64\Debug  -maxrregcount=0  --machine 64 --compile -cudart static  -g  -DWIN32 -DWIN64 -D_DEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /Od /Fdx64\Debug\vc142.pdb /FS /Zi /RTC1 /MDd " -o "C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\x64\Debug\hw10.cu.obj" "C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu" 
+  hw10.cu
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(51): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(52): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(53): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(54): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(62): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(63): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(64): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(75): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(249): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(257): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(320): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\hw10.cu(323): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+  hw10.vcxproj -> C:\Users\777ak\Desktop\school stuff\Computer Graphics\hw10\x64\Debug\hw10.exe
